@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NetArabia | متجر خدمات رقمية وبطاقات وشحن ألعاب واشتراكات</title>
+  <meta name="description" content="NetArabia متجر عربي لبيع اشتراكات ChatGPT، خدمات VPN، شحن الألعاب، Telegram Stars، بطاقات iTunes وPSN وSteam وAmazon وRoblox، مع تسليم سريع ودعم متواصل." />
+  <meta name="keywords" content="اشتراك ChatGPT, VPN, Telegram Stars, PUBG UC, Free Fire Diamonds, Fortnite V-Bucks, iTunes Gift Card, PSN, Steam, Amazon, Roblox, NetArabia" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://example.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NetArabia | متجر خدمات رقمية عربي" />
+  <meta property="og:description" content="اشتراكات، بطاقات رقمية، شحن ألعاب، وخدمات VPN مع تسليم سريع ودعم متواصل." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:site_name" content="NetArabia" />
+  <style>
+    :root{
+      --bg:#08111f; --bg2:#0f172a; --card:#111c31; --soft:#16233d; --line:rgba(255,255,255,.10);
+      --text:#f8fafc; --muted:#cbd5e1; --accent:#22c55e; --accent2:#38bdf8; --shadow:0 16px 40px rgba(0,0,0,.28);
+      --radius:22px; --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Tahoma, Arial, sans-serif;
+      background:radial-gradient(circle at top right, rgba(56,189,248,.14), transparent 28%),
+                 radial-gradient(circle at top left, rgba(34,197,94,.12), transparent 24%),
+                 linear-gradient(180deg, var(--bg), var(--bg2));
+      color:var(--text); line-height:1.8;
+    }
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:auto;padding:0 20px}
+    .topbar{position:sticky;top:0;z-index:50;backdrop-filter: blur(10px);background:rgba(8,17,31,.72);border-bottom:1px solid var(--line);}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:14px;font-weight:700;font-size:1.15rem}
+    .logo-box{width:54px;height:54px;border-radius:16px;border:1px dashed rgba(255,255,255,.35);
+      background:linear-gradient(135deg, rgba(34,197,94,.18), rgba(56,189,248,.18));
+      display:flex;align-items:center;justify-content:center;color:#fff;font-size:.92rem;text-align:center;padding:6px;}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
+    .nav-links a{color:var(--muted);font-size:.96rem}.nav-links a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:999px;
+      font-weight:700;border:1px solid transparent;transition:.2s ease;background:var(--accent);color:#071018;box-shadow:0 10px 24px rgba(34,197,94,.25);}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.03)}
+    .btn.secondary{background:transparent;border-color:var(--line);color:var(--text);box-shadow:none}
+    .hero{padding:64px 0 34px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.06);
+      border:1px solid var(--line);color:#dbeafe;font-size:.92rem;margin-bottom:18px;}
+    h1{font-size:clamp(2rem, 4vw, 4rem);line-height:1.15;margin:0 0 16px;letter-spacing:-.02em}
+    .hero p{color:var(--muted);font-size:1.08rem;margin:0 0 24px;max-width:760px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+    .hero-points{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .hero-points span{background:rgba(255,255,255,.05);border:1px solid var(--line);color:#e2e8f0;padding:10px 14px;border-radius:999px;font-size:.92rem}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+    .stat{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:16px}
+    .stat strong{display:block;font-size:1.35rem}
+    .section{padding:26px 0}
+    .section-title{font-size:clamp(1.5rem, 2.6vw, 2.3rem);margin:0 0 12px}
+    .section-desc{margin:0 0 22px;color:var(--muted)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 10px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
+    .service-list{display:grid;gap:16px}
+    .service{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px}
+    .service h3{margin:0 0 8px}.service ul{margin:10px 0 0;padding:0 18px 0 0;color:var(--muted)} .service li{margin:6px 0}
+    .highlight{color:#d1fae5;background:rgba(34,197,94,.10);border:1px solid rgba(34,197,94,.28);padding:10px 14px;border-radius:16px;display:inline-block;margin-top:14px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{position:relative;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:20px}
+    .step .num{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, var(--accent), var(--accent2));color:#08111f;font-weight:800;margin-bottom:12px}
+    .faq details{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:12px}
+    .faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted);margin:12px 0 0}
+    .cta{margin-top:10px;background:linear-gradient(135deg, rgba(34,197,94,.13), rgba(56,189,248,.12));border:1px solid var(--line);border-radius:28px;padding:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
+    .contact-box{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:20px;padding:18px}
+    .footer{padding:34px 0 46px;color:var(--muted);font-size:.95rem}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+    .small{font-size:.92rem;color:var(--muted)}
+    .tag{display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:.88rem;color:#e2e8f0;margin:4px 6px 0 0}
+    @media (max-width: 980px){
+      .hero-grid,.cta,.grid-3,.steps{grid-template-columns:1fr}
+      .nav{flex-wrap:wrap;padding:10px 0}.nav-links{width:100%}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"NetArabia",
+    "url":"https://example.com/",
+    "email":"mailto:Bardiarafi@gmail.com",
+    "sameAs":["https://t.me/NetArabia_bot"]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo-box">مكان<br>الشعار</div>
+        <div>
+          <div>NetArabia</div>
+          <div class="small">متجر خدمات رقمية موجه للعملاء العرب</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="#services">الخدمات</a>
+        <a href="#features">لماذا نحن</a>
+        <a href="#how">طريقة الطلب</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+      <a class="btn" href="https://t.me/NetArabia_bot" target="_blank" rel="noopener noreferrer">الدخول إلى البوت</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">⚡ متجر عربي للخدمات الرقمية والبطاقات والشحن السريع</div>
+          <h1>كل الخدمات الرقمية التي يحتاجها العميل العربي في مكان واحد</h1>
+          <p>
+            يقدم <strong>NetArabia</strong> مجموعة واسعة من الخدمات الرقمية الموجهة للسوق العربي، بما في ذلك
+            اشتراكات ChatGPT، إنشاء الحسابات، خدمات VPN، شحن الألعاب، Telegram Stars، وبطاقات الهدايا الرقمية.
+            الصفحة مصممة لتوضيح كل خدمة بشكل مباشر وواضح، مع زر وصول سريع إلى البوت الرسمي لإتمام الطلب.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="https://t.me/NetArabia_bot" target="_blank" rel="noopener noreferrer">افتح البوت الآن</a>
+            <a class="btn secondary" href="#services">استعرض جميع الخدمات</a>
+          </div>
+          <div class="hero-points">
+            <span>🚀 سرعة في التنفيذ</span>
+            <span>🔒 تعامل مباشر وواضح</span>
+            <span>🌍 خدمات مناسبة للعرب والخليج</span>
+            <span>🎮 شحن ألعاب وبطاقات رقمية</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="بطاقة تعريفية">
+          <h2 style="margin-top:0">نظرة سريعة</h2>
+          <p class="small">
+            هذه الصفحة تعرض الخدمات الأساسية التي يوفرها البوت، مع شرح مختصر لكل فئة حتى يفهم العميل بسرعة ما الذي يمكنه طلبه.
+          </p>
+          <div class="stats">
+            <div class="stat"><strong>12+</strong><span class="small">فئة خدمات رقمية</span></div>
+            <div class="stat"><strong>متعدد</strong><span class="small">بطاقات وشحنات واشتراكات</span></div>
+            <div class="stat"><strong>بوت تلغرام</strong><span class="small">لطلب الخدمة بشكل مباشر</span></div>
+            <div class="stat"><strong>دعم مباشر</strong><span class="small">عبر البوت والبريد الإلكتروني</span></div>
+          </div>
+          <div class="highlight">مهم: أضف شعارك الحقيقي داخل مكان الشعار في أعلى الصفحة قبل النشر النهائي.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">لماذا يختار العملاء NetArabia؟</h2>
+        <p class="section-desc">
+          لأن العميل يبحث عادة عن ثلاثة أمور: الوضوح، السرعة، وتنوع الخدمات. لذلك تم بناء هذه الصفحة لتعرض الخدمة بشكل واضح وتوجّه الزائر مباشرة نحو اتخاذ قرار الشراء من خلال البوت.
+        </p>
+        <div class="grid-3">
+          <div class="card"><h3>وضوح كامل في نوع الخدمة</h3><p>كل قسم في الصفحة يشرح الفئة بشكل مختصر وواضح حتى يعرف العميل بالضبط ما الذي يمكنه الحصول عليه.</p></div>
+          <div class="card"><h3>تنوع كبير في المنتجات الرقمية</h3><p>من اشتراكات الذكاء الاصطناعي إلى بطاقات الألعاب، مروراً بالـ VPN وشحن الحسابات والبطاقات الرقمية.</p></div>
+          <div class="card"><h3>مسار طلب مباشر عبر تيليجرام</h3><p>بدلاً من تعقيد الزائر، يوجد زر واضح ينقله مباشرة إلى البوت لبدء الطلب بطريقة سهلة ومباشرة.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">جميع الخدمات المتوفرة</h2>
+        <p class="section-desc">هنا ستجد شرحاً مختصراً لكل خدمة متاحة داخل البوت، حتى يعرف العميل العربي ما يناسبه قبل الدخول والطلب.</p>
+
+        <div class="service-list">
+          <div class="service">
+            <h3>🤖 اشتراكات ChatGPT</h3>
+            <p>نوفر باقات متنوعة لتجديد اشتراكات ChatGPT، سواء على شكل اشتراك Plus أو Pro، مع خيارات متعددة تناسب طريقة الاستخدام والاحتياج.</p>
+            <ul><li>باقات شهرية وسنوية</li><li>خيارات مناسبة للأفراد والمستخدمين المتقدمين</li><li>شرح واضح داخل البوت عند اختيار كل باقة</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🆕 إنشاء حسابات ChatGPT</h3>
+            <p>للعملاء الذين لا يريدون فقط تجديد اشتراك، بل يحتاجون إلى إنشاء حساب جديد مع الاشتراك، تتوفر خيارات خاصة لهذه الفئة داخل البوت.</p>
+            <ul><li>إنشاء حسابات جديدة</li><li>خيارات جاهزة أو مرتبطة ببريد العميل</li><li>فئة مخصصة لمن يريد البدء من الصفر</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🌐 خدمات VPN</h3>
+            <p>يقدم البوت أكثر من نوع من خدمات VPN لتلبية احتياجات مختلفة، سواء لمن يريد استخداماً عادياً، أو خيارات متعددة أكثر مرونة.</p>
+            <ul><li>WireGuard</li><li>VLESS - 10 IP 🌍</li><li>OpenVPN for 10 devices</li><li>NordVPN for 10 devices</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>⭐ Telegram Stars</h3>
+            <p>لمن يحتاجون إلى Telegram Stars داخل التطبيق، يوفر البوت باقات متعددة وبطريقة طلب واضحة ومباشرة.</p>
+            <ul><li>باقات Stars مختلفة</li><li>مناسبة للمستخدمين وصناع القنوات والبوتات</li><li>خطوات واضحة لإتمام الطلب</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🎮 PUBG Mobile</h3>
+            <p>يتضمن البوت خدمات شحن PUBG Mobile مثل UC وباقات Prime / Pass، مع مسار طلب خاص داخل البوت يطلب من العميل إثبات الدفع ثم ID اللعبة.</p>
+            <ul><li>شحن UC</li><li>Prime / Pass</li><li>إرشاد واضح للعميل حول طريقة إرسال ID</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>💎 شحن Free Fire</h3>
+            <p>للعملاء المهتمين بلعبة Free Fire، تتوفر باقات Diamonds بصياغة عربية مفهومة وواضحة ومهيأة لتحفّز العميل على الطلب.</p>
+            <ul><li>باقات شحن Diamonds</li><li>عرض واضح وسهل</li><li>مناسب لعملاء الألعاب في السوق العربي</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🪙 شحن Fortnite V-Bucks</h3>
+            <p>يوفر البوت أيضاً فئة خاصة بشحن V-Bucks الخاصة بلعبة Fortnite، بصيغة بسيطة وواضحة مع مسار شراء مباشر.</p>
+            <ul><li>باقات V-Bucks متنوعة</li><li>مناسبة لعشاق Fortnite</li><li>طلب مباشر من خلال البوت</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🍎 بطاقات Apple iTunes</h3>
+            <p>إذا كان العميل يبحث عن بطاقات iTunes لمناطق مختلفة، فهناك قسم مخصص لهذا النوع مع تقسيم بحسب الريجن.</p>
+            <ul><li>الولايات المتحدة</li><li>السعودية</li><li>الإمارات</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🎮 بطاقات PlayStation PSN</h3>
+            <p>قسم PSN مخصص لمن يريد شراء بطاقات PlayStation Gift Card، مع خيارات بحسب المنطقة.</p>
+            <ul><li>PSN UAE</li><li>PSN USA</li><li>سهولة اختيار البطاقة المناسبة</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🎮 بطاقات Steam</h3>
+            <p>يضم البوت بطاقات Steam لعدة مناطق، مما يعطي العميل مرونة أكبر في اختيار الريجن المناسب له.</p>
+            <ul><li>Steam Saudi Arabia</li><li>Steam UAE</li><li>Steam USA</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🛒 بطاقات Amazon</h3>
+            <p>قسم خاص ببطاقات Amazon Gift Card للمنطقتين الأساسيتين المستهدفتين داخل البوت.</p>
+            <ul><li>Amazon Saudi Arabia</li><li>Amazon UAE</li><li>خيارات متعددة للقيم</li></ul>
+          </div>
+
+          <div class="service">
+            <h3>🎮 بطاقات Roblox</h3>
+            <p>للمهتمين بـ Roblox، تتوفر بطاقات مخصصة ضمن البوت، ما يجعل البوت مناسباً لشريحة واسعة من عملاء الألعاب الرقمية.</p>
+            <ul><li>بطاقات Roblox</li><li>قسم واضح وسهل الوصول</li><li>مناسب للفئة الصغيرة والمهتمين بالألعاب الرقمية</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="section-title">كيف تتم عملية الطلب؟</h2>
+        <p class="section-desc">تم تصميم مسار الطلب ليكون بسيطاً قدر الإمكان حتى لا يشعر العميل بأي تعقيد أثناء الشراء.</p>
+        <div class="steps">
+          <div class="step"><div class="num">1</div><h3>اختيار الخدمة</h3><p class="small">يدخل العميل إلى البوت ويختار الفئة المناسبة له، مثل VPN أو شحن الألعاب أو البطاقات الرقمية.</p></div>
+          <div class="step"><div class="num">2</div><h3>اختيار الباقة</h3><p class="small">بعد الدخول إلى القسم المطلوب، يختار العميل الباقة أو القيمة أو الخطة المناسبة له.</p></div>
+          <div class="step"><div class="num">3</div><h3>الدفع وتأكيد الطلب</h3><p class="small">يتم عرض طريقة الدفع المناسبة، ثم يرسل العميل إثبات الدفع أو البيانات المطلوبة حسب نوع الخدمة.</p></div>
+          <div class="step"><div class="num">4</div><h3>استلام الخدمة</h3><p class="small">بعد تأكيد الطلب، يتم إرسال الخدمة أو تنفيذ الشحن أو تسليم الكود خلال مدة سريعة.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq">
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+        <p class="section-desc">هذه الأسئلة تساعد العميل على فهم الخدمة بسرعة.</p>
+        <details><summary>ما هي الخدمات التي يقدمها NetArabia؟</summary><p>يوفر NetArabia اشتراكات ChatGPT، إنشاء حسابات ChatGPT، خدمات VPN، Telegram Stars، شحن PUBG Mobile وFree Fire وFortnite، بالإضافة إلى بطاقات iTunes وPSN وSteam وAmazon وRoblox.</p></details>
+        <details><summary>كيف يتم التسليم؟</summary><p>بعد اختيار الخدمة والدفع عبر البوت، يتم إرسال بيانات الخدمة أو الكود أو تنفيذ الشحن خلال مدة سريعة، وغالباً خلال 5 إلى 10 دقائق حسب نوع المنتج.</p></details>
+        <details><summary>هل يوجد دعم مباشر؟</summary><p>نعم، يوجد تواصل مباشر عبر بوت تيليجرام الخاص بالخدمة بالإضافة إلى البريد الإلكتروني للدعم والاستفسارات.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 class="section-title" style="margin-top:0">جاهز للطلب؟</h2>
+            <p class="section-desc" style="margin-bottom:10px">
+              إذا كنت تبحث عن متجر عربي يجمع لك الخدمات الرقمية، البطاقات، شحن الألعاب، والاشتراكات في مكان واحد، فابدأ الآن من خلال البوت الرسمي.
+            </p>
+            <div>
+              <span class="tag">اشتراكات ChatGPT</span>
+              <span class="tag">VPN</span>
+              <span class="tag">PUBG</span>
+              <span class="tag">Free Fire</span>
+              <span class="tag">Fortnite</span>
+              <span class="tag">Steam</span>
+              <span class="tag">iTunes</span>
+              <span class="tag">PSN</span>
+            </div>
+            <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn" href="https://t.me/NetArabia_bot" target="_blank" rel="noopener noreferrer">فتح البوت الرسمي</a>
+              <a class="btn secondary" href="mailto:Bardiarafi@gmail.com">إرسال بريد إلكتروني</a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <h3 style="margin-top:0">بيانات التواصل</h3>
+            <p><strong>البريد الإلكتروني:</strong><br>Bardiarafi@gmail.com</p>
+            <p><strong>البوت على تيليجرام:</strong><br>@NetArabia_bot</p>
+            <p class="small">تم وضع زر واضح للبوت داخل الصفحة لزيادة النقر والتحويل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>© 2026 NetArabia. جميع الحقوق محفوظة.</div>
+      <div class="small">صفحة هبوط عربية مهيأة من حيث البنية الأساسية للسيو والتحويل، مع ترك مساحة واضحة للشعار والروابط الرسمية.</div>
+    </div>
+  </footer>
+</body>
+</html>
